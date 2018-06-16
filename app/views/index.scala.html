@@ -1,0 +1,26 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(message: String)
+
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Welcome to Play") {
+
+    <form action="@routes.HomeController.addPerson()" method="post">
+        <input name="name" type="text">
+        <button>Add Person</button>
+    </form>
+
+    <form action="@routes.HomeController.getLawyer()" method="get">
+        <input name="id" type="text">
+        <button>Get Lawyer</button>
+    </form>
+}
+
+
+
