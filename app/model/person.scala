@@ -1,6 +1,6 @@
 package model
 
-import play.api.libs.json.Js
+import play.api.libs.json._
 /**
  * Created by rohanp on 2/19/18.
  */
